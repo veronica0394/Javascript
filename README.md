@@ -1,1 +1,1 @@
-# Esto es un primer test entendiendo la lógica de JavaScript
+# Esto es un primer test de JavaScript
