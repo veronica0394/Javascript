@@ -18,17 +18,20 @@ function imprimir(frase) {
 	
 	}
 	
-function calcularImc(peso,altura,nombre) {
+function calcularImc(peso,altura) {
 
-  imc = peso / (altura * altura);
-  imprimir("El imc calculado de " + nombre + " es " + imc);
+  return (peso / (altura * altura));
+  
   
   }
 
- calcularImc(71,1.72, "Vero");
- calcularImc(75,1.57, "Paola");
+nombre = prompt("Escriba su nombre")
+pesoInformado = prompt(nombre + ", informe su peso en kilogramos")
+alturaInformado = prompt(nombre + ", informe su altura en metros")
 
-  
+imcCalculado = calcularImc(pesoInformado,alturaInformado)
+
+imprimir(nombre + ", su imc calculado es: " + imcCalculado);
   
 
 </script>
